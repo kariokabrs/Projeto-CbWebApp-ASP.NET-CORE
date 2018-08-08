@@ -3,13 +3,18 @@
 }
 
 <div class="jumbotron text-center jumbotron-icon">
-    <h2>Este site foi</h2>
-    <h1>Desenvolvido em .NET CORE</h1>
+    <h2 class="sitefoi">Este site foi</h2>
+    <h1 class="desenvolvido">Desenvolvido em .NET CORE</h1>
+    <br />
+    <div class="ms-logo logo1">
+        <span class="box left red"></span>
+        <span class="box right green"></span>
+        <span class="box left blue"></span>
+        <span class="box right yellow"></span>
 
-    <div class="container">
-        <div class="info-icons">
+        @*<div class="info-icons">
             <i class="fab fa-microsoft fa-6"></i>&nbsp;&nbsp;
-        </div>
+        </div>*@
     </div>
     @*<form asp-controller="Home" asp-action="Error" method="post">
             <div class="input-group">
@@ -25,9 +30,10 @@
     <div class="row">
         <div class="col-sm-10">
             <h2>Sobre a empresa</h2>
-            <h4>Somos uma empresa especialista puramente em TI e com profissionais com mais de 10 anos no mercado desenvolvendo software de ponta seguindo as boas práticas de programação com arquitetura e segurança avançados. Aplicamos os princípios do SOLID, OOP, DRY, Separation of Concerns, puro MVC e MVVM, CQRS, GoF, Async Task e Strongly Typed.</h4><br>
+            <h4>Somos uma empresa especialista em Tecnologia da Informação com profissionais pós graduados com + 20 anos no mercado desenvolvendo software de ponta seguindo the good programming com arquitetura e segurança avançados. Aplicamos princípios do SOLID, OOP, DRY, Separation of Concerns, puro MVC e MVVM, CQRS, GoF, Async Task e Strongly Typed. Com essa arquitetura entregamos software com mais qualidade, robutez, eficiência, organizado, performance e documentado pronto para atendimento às novas demandas, regras de negócio e sustenção.</h4><br>
             <br>@*<button class="btn btn-default btn-lg">Get in Touch</button>*@
         </div>
+        <br />
         <div class="col-sm-2">
             <span class="fa fa-microchip logo1"></span>
         </div>
@@ -41,7 +47,7 @@
                 <span class="fa fa-flag logo2"></span>
             </div>
             <div class="row2">
-              <span class="fa fa-eye logo2"></span>
+                <span class="fa fa-eye logo2"></span>
             </div>
         </div>
         <div class="col-sm-9">
@@ -62,72 +68,72 @@
     <h4>Nós oferecemos</h4>
     <br>
     <div class="row slideanim">
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-off logo-small"></span>
             <h4>.NET</h4>
             <p>Universo Microsoft .NET</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-heart logo-small"></span>
             <h4>.NET CORE</h4>
-            <p>A mais nova tecnologia Cross-Plataform da Microsoft</p>
+            <p>Nova tecnologia Cross-Plataform da Microsoft</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-lock logo-small"></span>
             <h4>ASP.NET MVC</h4>
             <p>Sistema WEB em Puro MVC</p>
         </div>
     </div>
-    <br><br>
+
     <div class="row slideanim">
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-leaf logo-small"></span>
             <h4>ASP.NET MVVM</h4>
             <p>Sistema WEB em Puro MVVM e DTO´s</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-certificate logo-small"></span>
             <h4>Entity Framework CORE</h4>
             <p>O mais novo ORM eficiência</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-wrench logo-small"></span>
             <h4 style="color:#303030;">WEB API 2</h4>
             <p>Integração entre sistemas com JSON</p>
         </div>
     </div>
     <div class="row slideanim">
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-book logo-small"></span>
             <h4>WPF</h4>
             <p>Qualidade em design para aplcações Desktop</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-apple logo-small"></span>
             <h4>UWP</h4>
             <p>A mais nova plataforma desktop da Microsoft</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:darkgreen">
             <span class="glyphicon glyphicon-bitcoin logo-small"></span>
             <h4 style="color:#303030;">Docker</h4>
             <p>Containers para otimização e performance</p>
         </div>
     </div>
     <div class="row slideanim">
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-barcode logo-small"></span>
             <h4>SQL Server</h4>
-            <p>Banco de dados avançado da Microsoft</p>
+            <p>Banco de dados da Microsoft</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-alert logo-small"></span>
             <h4>MySQL</h4>
-            <p>Banco de dados da Oracle para pequenos projetos</p>
+            <p>Banco de dados da Oracle</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="background-color:black">
             <span class="glyphicon glyphicon-baby-formula logo-small"></span>
             <h4 style="color:#303030;">ORACLE</h4>
-            <p>Banco de dados avançado da Oracle</p>
+            <p>Banco de dados da Oracle</p>
         </div>
     </div>
 </div>
@@ -260,7 +266,7 @@
                     <h1 class="text-center">Sis.Web</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>Tecnologia</strong> ASP.NET CORE 2.0</p>
+                    <p><strong>Tecnologia</strong> Asp.Net CORE 2.0</p>
                     <p><strong>Base de dados</strong> SQL Server</p>
                     <p><strong>Análise de Requisitos</strong> Sim</p>
                     <p><strong>Documentação</strong> Sim</p>

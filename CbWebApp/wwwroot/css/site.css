@@ -33,7 +33,7 @@ h2 {
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -41,30 +41,30 @@ h4 {
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .jumbotron {
     opacity: 0.9;
     background-color: black;
     color: #fff;
-    padding: 100px 25px;
+    padding: 80px 15px;
     font-family: Montserrat, sans-serif;
-    -webkit-animation-name: jumbotron;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-name: jumbotron;
-    -moz-animation-duration: 20s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-    animation-name: jumbotron;
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    -webkit-animation-name: jumbotron, jumbotron2;
+    -webkit-animation-duration: 20s, 2s;
+    -webkit-animation-delay: 0s, 0s;
+    -webkit-animation-iteration-count: infinite,initial;
+    -webkit-animation-direction: alternate, alternate;
+    -moz-animation-name: jumbotron, jumbotron2;
+    -moz-animation-duration: 20s, 2s;
+    -moz-animation-delay: 0s, 0s;
+    -moz-animation-iteration-count: infinite,initial;
+    -moz-animation-direction: alternate, alternate;
+    animation-name: jumbotron, jumbotron2;
+    animation-duration: 20s, 2s;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: infinite,initial;
+    animation-direction: alternate, alternate;
 }
 
 .jumbotron-icon .fa-6 {
@@ -72,6 +72,7 @@ h4 {
 }
 
 @keyframes jumbotron {
+
     0% {
         background-color: black;
     }
@@ -90,6 +91,59 @@ h4 {
 
     100% {
         background-color: black;
+    }
+}
+
+
+@keyframes jumbotron2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.sitefoi {
+    opacity: 0;
+    -webkit-animation-name: texto;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: texto;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 2s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: texto;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.desenvolvido {
+    opacity: 0;
+    -webkit-animation-name: texto;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: texto;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 4s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -365,7 +419,7 @@ footer .glyphicon {
 @keyframes slide {
     0% {
         opacity: 0;
-       -webkit-transform: translateY(70%);
+        -webkit-transform: translateY(70%);
         -moz-transform: translateY(70%);
         transform: translateY(70%);
     }
@@ -504,8 +558,9 @@ span {
     opacity: 0.9;
 }
 
-.row{
+.row {
     opacity: 0.9;
+    margin: 5px 5px 5px 5px;
 }
 
 .row1 {
@@ -515,4 +570,67 @@ span {
 
 .row2 {
     opacity: 0.9;
+}
+
+@keyframes logo {
+    0%, 100% {
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg)
+    }
+
+    25% {
+        left: 50px;
+        top: 0px;
+        transform: rotate(180deg)
+    }
+
+    50% {
+        left: 50px;
+        top: 50px;
+        transform: rotate(0deg)
+    }
+
+    75% {
+        left: 0px;
+        top: 50px;
+        transform: rotate(-180deg)
+    }
+}
+
+.ms-logo {
+    overflow: hidden;
+    width: 112px;
+    margin: 0 auto;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+}
+
+.red {
+    background-color: #f02400;
+}
+
+.green {
+    background-color: #76bf00;
+}
+
+.blue {
+    background-color: #1e9dfc;
+}
+
+.yellow {
+    background-color: #feb801;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+    clear: right;
 }
