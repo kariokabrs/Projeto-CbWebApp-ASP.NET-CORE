@@ -13,7 +13,6 @@
     transition: 1s opacity;
 }
 
-
 /*.navbar-brand {
     background: url('/images/core.png') no-repeat;
     background-size: 20px 20px;
@@ -47,10 +46,46 @@ h4 {
 
 .jumbotron {
     opacity: 0.9;
-    background-color: #f4511e;
+    background-color: black;
     color: #fff;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+    -webkit-animation-name: jumbotron;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: jumbotron;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.jumbotron-icon .fa-6 {
+    font-size: 10em;
+}
+
+@keyframes jumbotron {
+    0% {
+        background-color: black;
+    }
+
+    25% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    75% {
+        background-color: darkgreen;
+    }
+
+    100% {
+        background-color: black;
+    }
 }
 
 .container-fluid {
@@ -63,13 +98,45 @@ h4 {
 }
 
 .logo-small {
-    color: #f4511e;
+    color: black;
     font-size: 50px;
 }
 
 .logo {
-    color: #f4511e;
+    color: black;
     font-size: 200px;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: logo;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes logo {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: black;
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: darkgreen;
+    }
+
+    100% {
+        color: black;
+    }
 }
 
 .thumbnail {
@@ -86,15 +153,15 @@ h4 {
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: black;
 }
 
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: black;
 }
 
     .carousel-indicators li.active {
-        background-color: #f4511e;
+        background-color: black;
     }
 
 .item h4 {
@@ -110,7 +177,7 @@ h4 {
 }
 
 .panel {
-    border: 1px solid #f4511e;
+    border: 1px solid black;
     border-radius: 0 !important;
     transition: box-shadow 0.5s;
 }
@@ -120,14 +187,14 @@ h4 {
     }
 
 .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
+    border: 1px solid black;
     background-color: #fff !important;
-    color: #f4511e;
+    color: black;
 }
 
 .panel-heading {
     color: #fff !important;
-    background-color: #f4511e !important;
+    background-color: black !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -151,14 +218,14 @@ h4 {
 
     .panel-footer .btn {
         margin: 15px 0;
-        background-color: #f4511e;
+        background-color: black;
         color: #fff;
     }
 
 .navbar {
     opacity: 0.9;
     margin-bottom: 0;
-    background-color: #f4511e;
+    background-color: black;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -166,14 +233,47 @@ h4 {
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
+    -webkit-animation-name: navbar;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: navbar;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-    .navbar li a, .navbar .navbar-brand {
-        color: #fff !important;
+
+@keyframes navbar {
+    0% {
+        background-color: black;
     }
 
+    25% {
+        background-color: black;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    75% {
+        background-color: darkgreen;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
+    color: black !important;
     background-color: #fff !important;
 }
 
@@ -185,7 +285,7 @@ h4 {
 footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #f4511e;
+    color: black;
 }
 
 .slideanim {
@@ -240,4 +340,85 @@ footer .glyphicon {
     .logo {
         font-size: 150px;
     }
+}
+
+.pfooter {
+    color: darkgreen;
+    text-align: center;
+    -webkit-animation-name: pfooter;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: pfooter;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pfooter {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: black;
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: darkgreen;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.felix {
+    margin-bottom: 56px;
+    margin-left: 43%;
+    /*/margin-right: 50%;*/
+    max-width: 40px;
+    max-height: 32px;
+    width: 50%;
+    height: 50%;
+    /*-webkit-animation-name: felixcat;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-name: felixcat;
+    animation-duration: 25s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+}
+
+    .felix:hover {
+        -webkit-animation-play-state: paused;
+        animation-play-state: paused;
+    }
+
+
+@keyframes felixcat {
+    0% {
+        margin-left: 50%;
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        margin-left: 50%;
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+i {
+    opacity: 0.9;
 }

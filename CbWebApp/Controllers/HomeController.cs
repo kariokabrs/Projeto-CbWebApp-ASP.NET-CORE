@@ -17,14 +17,14 @@ namespace CbWebApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Log in.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Jájá fica mais bonitinho seu fresco.";
 
             return View();
         }

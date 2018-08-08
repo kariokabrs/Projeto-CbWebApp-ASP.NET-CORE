@@ -2,29 +2,33 @@
     ViewData["Title"] = "CB";
 }
 
-<div class="jumbotron text-center">
-    <h1>Sergio ASP.NET Core</h1>
-    <p>Rumo ao futuro</p>
-    <form>
-        <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email" required>
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Inscrever</button>
-            </div>
+<div class="jumbotron text-center jumbotron-icon">
+    <h1>Desenvolvido em .NET CORE</h1>
+   
+    <div class="container">
+        <div class="info-icons">
+            <i class="fab fa-microsoft fa-6"></i>&nbsp;&nbsp;
         </div>
-    </form>
+    </div>
+    @*<form asp-controller="Home" asp-action="Error" method="post">
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email" required>
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-danger" >Clique aqui para Peidar</button>
+                </div>
+            </div>
+        </form>*@
 </div>
-<!-- Container (Sobre Section) -->
+<!-- Sobre -->
 <div id="sobre" class="container-fluid">
     <div class="row">
         <div class="col-sm-8">
             <h2>Sobre a empresa</h2><br>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h4>A "empresa" desenvolve software de ponta seguindo as boas práticas de programação com arquitetura e segurança avançados. Aplicamos os princípios do SOLID, OOP, DRY, Separation of Concerns, puro MVC e MVVM, CQRS, GoF, Async Task e Strongly Typed.</h4><br>
             <br>@*<button class="btn btn-default btn-lg">Get in Touch</button>*@
         </div>
         <div class="col-sm-4">
-            <span class="glyphicon glyphicon-signal logo"></span>
+            <span class="fa fa-microchip logo"></span>
         </div>
     </div>
 </div>
@@ -32,112 +36,157 @@
 <div class="container-fluid bg-grey">
     <div class="row">
         <div class="col-sm-4">
-            <span class="glyphicon glyphicon-globe logo slideanim"></span>
+            <span class="fa fa-flag logo"></span>
+            <span class="fa fa-eye logo"></span>
         </div>
         <div class="col-sm-8">
             <h2>Valores</h2><br>
-            <h4><strong>Missão:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-            <p>
-                <strong>Visão:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <h4>
+                <strong>Missão:</strong> Levantamento de requisitos e desenvolvimento de Sistemas e tecnologias de ponto Web, Windows, Cross-Plataform CORE, WCF, Web API, intgração entre sistemas, UWP, ERP, TPM, CRM, Banco de Dados relacionais e não relacionais.
+            </h4><br>
+            <h4>
+                <strong>Visão:</strong> Informatização, modernização, automação de regras de negócios, corte de custos, otimização do trabalho, workflow, melhor gestão, melhor qualidade de produtos e serviços, melhor tomada de decisão, melhor relacionamento com o cliente.
+            </h4>
         </div>
     </div>
 </div>
 
-<!-- Container (Serviços Section) -->
-<div id="services" class="container-fluid text-center">
-    <h2>Serviços</h2>
+<!-- Serviços -->
+<div id="tecnologias" class="container-fluid text-center">
+    <h2>Tecnologias</h2>
     <h4>Nós oferecemos</h4>
     <br>
     <div class="row slideanim">
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-off logo-small"></span>
-            <h4>PODER</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4>.NET</h4>
+            <p>Universo Microsoft .NET</p>
         </div>
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-heart logo-small"></span>
-            <h4>AMOR</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4>.NET CORE</h4>
+            <p>A mais nova tecnologia Cross-Plataform da Microsoft</p>
         </div>
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-lock logo-small"></span>
-            <h4>TRABALHO</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4>ASP.NET MVC</h4>
+            <p>Sistema WEB em Puro MVC</p>
         </div>
     </div>
     <br><br>
     <div class="row slideanim">
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-leaf logo-small"></span>
-            <h4>VERDE</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4>ASP.NET MVVM</h4>
+            <p>Sistema WEB em Puro MVVM e DTO´s</p>
         </div>
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-certificate logo-small"></span>
-            <h4>CERTIFICADO</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4>Entity Framework CORE</h4>
+            <p>O mais novo ORM eficiência</p>
         </div>
         <div class="col-sm-4">
             <span class="glyphicon glyphicon-wrench logo-small"></span>
-            <h4 style="color:#303030;">TRABALHO PESADO</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+            <h4 style="color:#303030;">WEB API 2</h4>
+            <p>Integração entre sistemas com JSON</p>
+        </div>
+    </div>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-book logo-small"></span>
+            <h4>WPF</h4>
+            <p>Qualidade em design para aplcações Desktop</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-apple logo-small"></span>
+            <h4>UWP</h4>
+            <p>A mais nova plataforma desktop da Microsoft</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-bitcoin logo-small"></span>
+            <h4 style="color:#303030;">Docker</h4>
+            <p>Containers para otimização e performance</p>
+        </div>
+    </div>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-barcode logo-small"></span>
+            <h4>SQL Server</h4>
+            <p>Banco de dados avançado da Microsoft</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-alert logo-small"></span>
+            <h4>MySQL</h4>
+            <p>Banco de dados da Oracle para pequenos projetos</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-baby-formula logo-small"></span>
+            <h4 style="color:#303030;">ORACLE</h4>
+            <p>Banco de dados avançado da Oracle</p>
         </div>
     </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-    @*<h2>Portfolio</h2><br>
-    <h4>O que já criamos</h4>
+<!--Diretores -->
+<div id="diretores" class="container-fluid text-center bg-grey">
+    <h2>Diretores</h2><br>
+    <h4>Os Fodões</h4>
     <div class="row text-center slideanim">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="thumbnail">
-                <img src="paris.jpg" alt="Paris" width="400" height="300">
-                <p><strong>Paris</strong></p>
-                <p>Trabalhamos em Paris</p>
+                <img src="@Url.Content("~/images/lobak.png")" alt="Lobak" width="300" height="300">
+                <p><strong>Daniel Lobak</strong></p>
+                <p>Zen</p>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="thumbnail">
-                <img src="newyork.jpg" alt="New York" width="400" height="300">
-                <p><strong>New York</strong></p>
-                <p>Também estamos em Nova Iorque</p>
+                <img src="@Url.Content("~/images/willian.png")" alt="Willian" width="300" height="300">
+                <p><strong>Willian Palhares</strong></p>
+                <p>Doido</p>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="thumbnail">
-                <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-                <p><strong>Rio de Janeiro</strong></p>
-                <p>Sim, o Rio de Janeiro é nosso</p>
+                <img src="@Url.Content("~/images/sergio.jpg")" alt="Sérgio" width="300" height="300">
+                <p><strong>Sérgio Rezende</strong></p>
+                <p>Desligado</p>
             </div>
         </div>
-    </div><br>*@
+        <div class="col-sm-3">
+            <div class="thumbnail">
+                <img src="@Url.Content("~/images/rodrigo.jpg")" alt="Rodrigo" width="300" height="300">
+                <p><strong>Rodrigo Camarada</strong></p>
+                <p>Mulherengo</p>
+            </div>
+        </div>
+    </div><br>
 
     <h2>Feedback</h2>
     <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-        <!-- Indicators -->
+       
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <h4>"Essa companhia é fodona!"<br><span>Sérgio Rezende, Desenvolvedor .NET</span></h4>
+                <h4>"-Não entendi, feedback do que ??"<br><span>Sérgio Rezende, Um desligado Analista de Sistemas .NET FullStack</span></h4>
             </div>
             <div class="item">
-                <h4>"Uma palavra... PQP!!"<br><span>Daniel Lobak, Gerente de Projetos, Lobak Inc</span></h4>
+                <h4>"-Tudo é uma gordurinha...("-Fale mais alto Lobak!)"<br><span>Daniel Lobak, Um zen Gerente de Projetos</span></h4>
             </div>
             <div class="item">
-                <h4>"Eu posso... um pouco mais feliz com esta empresa?"<br><span>Willian Palhares, Analista Java, Pazzo</span></h4>
+                <h4>"-Eu posso... quero que todo mundo vai tomar banho!"<br><span>Willian Palhares, Um doido Analista de Sistemas Java FullStack</span></h4>
+            </div>
+            <div class="item">
+                <h4>"-Cara...um pombo cagou na minha camisa!"<br><span>Rodrigo Camarada, Um mulherengo Analista de Sistemas .NET BackEnd</span></h4>
             </div>
         </div>
 
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -149,7 +198,7 @@
     </div>
 </div>
 
-<!-- Container (Preços Section) -->
+<!-- Preços -->
 <div id="pricing" class="container-fluid">
     <div class="text-center">
         <h2>Preços</h2>
@@ -159,17 +208,17 @@
         <div class="col-sm-4 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Básico</h1>
+                    <h1>Fodinha</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>20</strong> Lorem</p>
-                    <p><strong>15</strong> Ipsum</p>
-                    <p><strong>5</strong> Dolor</p>
-                    <p><strong>2</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong>20</strong> Morenas</p>
+                    <p><strong>15</strong> Loiras</p>
+                    <p><strong>5</strong> Fodas</p>
+                    <p><strong>2</strong> Gostosas</p>
+                    <p><strong>Troca</strong> Não</p>
                 </div>
                 <div class="panel-footer">
-                    <h3>R$ 19,00</h3>
+                    <h3>R$ 119,00</h3>
                     <h4>mensal</h4>
                     <button class="btn btn-lg">Assinar</button>
                 </div>
@@ -178,17 +227,17 @@
         <div class="col-sm-4 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Pro</h1>
+                    <h1>Foda</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>50</strong> Lorem</p>
-                    <p><strong>25</strong> Ipsum</p>
-                    <p><strong>10</strong> Dolor</p>
-                    <p><strong>5</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong>50</strong> Morenas</p>
+                    <p><strong>25</strong> Loiras</p>
+                    <p><strong>10</strong> Fodas</p>
+                    <p><strong>5</strong> Gostosas</p>
+                    <p><strong>Troca</strong> Sim</p>
                 </div>
                 <div class="panel-footer">
-                    <h3>R$ 29,00</h3>
+                    <h3>R$ 229,00</h3>
                     <h4>mensal</h4>
                     <button class="btn btn-lg">Assinar</button>
                 </div>
@@ -197,17 +246,17 @@
         <div class="col-sm-4 col-xs-12">
             <div class="panel panel-default text-center">
                 <div class="panel-heading">
-                    <h1>Premium</h1>
+                    <h1>Fodão</h1>
                 </div>
                 <div class="panel-body">
-                    <p><strong>100</strong> Lorem</p>
-                    <p><strong>50</strong> Ipsum</p>
-                    <p><strong>25</strong> Dolor</p>
-                    <p><strong>10</strong> Sit</p>
-                    <p><strong>Endless</strong> Amet</p>
+                    <p><strong>100</strong> Morenas</p>
+                    <p><strong>50</strong> Loiras</p>
+                    <p><strong>25</strong> Fodas</p>
+                    <p><strong>10</strong> Gostosas</p>
+                    <p><strong>Troca</strong> Sim</p>
                 </div>
                 <div class="panel-footer">
-                    <h3>R$ 49,00</h3>
+                    <h3>R$ 449,00</h3>
                     <h4>mensal</h4>
                     <button class="btn btn-lg">Assinar</button>
                 </div>
@@ -216,15 +265,15 @@
     </div>
 </div>
 
-<!-- Container (Contact Section) -->
+<!-- Contato -->
 <div id="contato" class="container-fluid bg-grey">
     <h2 class="text-center">CONTATO</h2>
     <div class="row">
         <div class="col-sm-5">
-            <p>Contate nos e retornaremos em até 24 horas.</p>
+            <p>Retornaremos em até 24 horas.</p>
             <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, RJ</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +55 21999999999</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> myemail@teste.com</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +55 21 9 8214-9672</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> kariokabrs@msn.com</p>
         </div>
         <div class="col-sm-7 slideanim">
             <div class="row">
