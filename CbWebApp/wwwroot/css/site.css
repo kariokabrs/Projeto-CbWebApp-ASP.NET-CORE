@@ -55,6 +55,11 @@ h4 {
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
+    -moz-animation-name: jumbotron;
+    -moz-animation-duration: 20s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
     animation-name: jumbotron;
     animation-duration: 20s;
     animation-delay: 0s;
@@ -104,12 +109,57 @@ h4 {
 
 .logo {
     color: black;
+    font-size: 100px;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 20s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    animation-name: logo;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.logo1 {
+    color: black;
     font-size: 200px;
     -webkit-animation-name: logo;
     -webkit-animation-duration: 20s;
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 20s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    animation-name: logo;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.logo2 {
+    color: black;
+    font-size: 100px;
+    -webkit-animation-name: logo;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -moz-animation-name: logo;
+    -moz-animation-duration: 20s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
     animation-name: logo;
     animation-duration: 20s;
     animation-delay: 0s;
@@ -178,33 +228,38 @@ h4 {
 
 .panel {
     border: 1px solid black;
-    border-radius: 0 !important;
+    border-radius: 0;
     transition: box-shadow 0.5s;
 }
 
     .panel:hover {
-        box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+        box-shadow: 5px 0 40px rgba(0,0,0, .2);
     }
 
 .panel-footer .btn:hover {
     border: 1px solid black;
-    background-color: #fff !important;
+    background-color: #fff;
     color: black;
 }
 
 .panel-heading {
-    color: #fff !important;
-    background-color: black !important;
+    color: white;
+    background-color: darkgreen;
     padding: 25px;
     border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#ph {
+    color: white;
+    background-color: black;
 }
 
 .panel-footer {
-    background-color: white !important;
+    background-color: white;
 }
 
     .panel-footer h3 {
@@ -212,12 +267,13 @@ h4 {
     }
 
     .panel-footer h4 {
+        margin: 15px 0;
         color: #aaa;
         font-size: 14px;
     }
 
     .panel-footer .btn {
-        margin: 15px 0;
+        margin: 10px 0;
         background-color: black;
         color: #fff;
     }
@@ -228,8 +284,8 @@ h4 {
     background-color: black;
     z-index: 9999;
     border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
+    font-size: 12px;
+    line-height: 1.42857143;
     letter-spacing: 4px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
@@ -238,13 +294,17 @@ h4 {
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
+    -moz-animation-name: navbar;
+    -moz-animation-duration: 20s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
     animation-name: navbar;
     animation-duration: 20s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
 
 @keyframes navbar {
     0% {
@@ -269,17 +329,17 @@ h4 {
 }
 
 .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
+    color: #fff;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: black !important;
-    background-color: #fff !important;
+    color: black;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: #fff !important;
+    color: #fff;
 }
 
 footer .glyphicon {
@@ -295,19 +355,25 @@ footer .glyphicon {
 .slide {
     animation-name: slide;
     -webkit-animation-name: slide;
+    -moz-animation-name: slide;
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
     visibility: visible;
 }
 
 @keyframes slide {
     0% {
         opacity: 0;
+       -webkit-transform: translateY(70%);
+        -moz-transform: translateY(70%);
         transform: translateY(70%);
     }
 
     100% {
         opacity: 1;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
         transform: translateY(0%);
     }
 }
@@ -316,11 +382,15 @@ footer .glyphicon {
     0% {
         opacity: 0;
         -webkit-transform: translateY(70%);
+        -moz-transform: translateY(70%);
+        transform: translateY(70%);
     }
 
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        transform: translateY(0%);
     }
 }
 
@@ -350,6 +420,11 @@ footer .glyphicon {
     -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
+    -moz-animation-name: pfooter;
+    -moz-animation-duration: 10s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
     animation-name: pfooter;
     animation-duration: 10s;
     animation-delay: 0s;
@@ -401,24 +476,43 @@ footer .glyphicon {
 
     .felix:hover {
         -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
         animation-play-state: paused;
     }
-
 
 @keyframes felixcat {
     0% {
         margin-left: 50%;
         -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
 
     100% {
         margin-left: 50%;
         -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
         transform: rotateY(360deg);
     }
 }
 
 i {
+    opacity: 0.9;
+}
+
+span {
+    opacity: 0.9;
+}
+
+.row{
+    opacity: 0.9;
+}
+
+.row1 {
+    margin: 100px auto;
+    opacity: 0.9;
+}
+
+.row2 {
     opacity: 0.9;
 }
