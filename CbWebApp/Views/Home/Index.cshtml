@@ -5,16 +5,18 @@
 <div class="jumbotron text-center jumbotron-icon">
     <h2 class="sitefoi">Este site foi</h2>
     <h1 class="desenvolvido">Desenvolvido em .NET CORE</h1>
+
     <br />
-    <div class="ms-logo logo1">
+    <div class="ms-logo">
         <span class="box left red"></span>
         <span class="box right green"></span>
         <span class="box left blue"></span>
         <span class="box right yellow"></span>
+        <h4>Microsoft</h4>
 
         @*<div class="info-icons">
-            <i class="fab fa-microsoft fa-6"></i>&nbsp;&nbsp;
-        </div>*@
+                <i class="fab fa-microsoft fa-6"></i>&nbsp;&nbsp;
+            </div>*@
     </div>
     @*<form asp-controller="Home" asp-action="Error" method="post">
             <div class="input-group">
@@ -26,6 +28,12 @@
         </form>*@
 </div>
 <!-- Sobre -->
+
+<div id="abaixo" class="container-fluid text-center">
+    <i class="fas fa-angle-down logo4"></i>
+</div>
+
+
 <div id="sobre" class="container-fluid">
     <div class="row">
         <div class="col-sm-10">
@@ -65,20 +73,20 @@
 <!-- tecnologias -->
 <div id="tecnologias" class="container-fluid text-center">
     <h2>Tecnologias</h2>
-    <h4>Nós oferecemos</h4>
+    <h4>Oferecemos soluções Microsoft e Oracle</h4>
     <br>
     <div class="row slideanim">
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-off logo-small"></span>
             <h4>.NET</h4>
-            <p>Universo Microsoft .NET</p>
+            <p>Universo .NET</p>
         </div>
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-heart logo-small"></span>
             <h4>.NET CORE</h4>
-            <p>Nova tecnologia Cross-Plataform da Microsoft</p>
+            <p>Nova tecnologia Cross-Plataform</p>
         </div>
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-lock logo-small"></span>
             <h4>ASP.NET MVC</h4>
             <p>Sistema WEB em Puro MVC</p>
@@ -86,51 +94,51 @@
     </div>
 
     <div class="row slideanim">
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-leaf logo-small"></span>
             <h4>ASP.NET MVVM</h4>
             <p>Sistema WEB em Puro MVVM e DTO´s</p>
         </div>
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-certificate logo-small"></span>
             <h4>Entity Framework CORE</h4>
-            <p>O mais novo ORM eficiência</p>
+            <p>O mais novo ORM</p>
         </div>
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-wrench logo-small"></span>
             <h4 style="color:#303030;">WEB API 2</h4>
             <p>Integração entre sistemas com JSON</p>
         </div>
     </div>
     <div class="row slideanim">
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-book logo-small"></span>
             <h4>WPF</h4>
             <p>Qualidade em design para aplcações Desktop</p>
         </div>
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-apple logo-small"></span>
             <h4>UWP</h4>
-            <p>A mais nova plataforma desktop da Microsoft</p>
+            <p>Nova plataforma universal</p>
         </div>
-        <div class="col-sm-4" style="background-color:darkgreen">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-bitcoin logo-small"></span>
             <h4 style="color:#303030;">Docker</h4>
             <p>Containers para otimização e performance</p>
         </div>
     </div>
     <div class="row slideanim">
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-barcode logo-small"></span>
             <h4>SQL Server</h4>
-            <p>Banco de dados da Microsoft</p>
+            <p>Banco de dados</p>
         </div>
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-alert logo-small"></span>
             <h4>MySQL</h4>
             <p>Banco de dados da Oracle</p>
         </div>
-        <div class="col-sm-4" style="background-color:black">
+        <div class="col-sm-4">
             <span class="glyphicon glyphicon-baby-formula logo-small"></span>
             <h4 style="color:#303030;">ORACLE</h4>
             <p>Banco de dados da Oracle</p>
@@ -308,31 +316,31 @@
 </div>
 
 <!-- Contato -->
-<div id="contato" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTATO</h2>
-    <div class="row">
-        <div class="col-sm-5">
-            <p>Retornaremos em até 24 horas.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, RJ</p>
-            <p><span class="glyphicon glyphicon-phone"></span> +55 21 9 8214-9672</p>
-            <p><span class="glyphicon glyphicon-envelope"></span> kariokabrs@msn.com</p>
-        </div>
-        <div class="col-sm-7 slideanim">
-            <div class="row">
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+@*<div id="contato" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTATO</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Retornaremos em até 24 horas.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Rio de Janeiro, RJ</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +55 21 9 8214-9672</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> kariokabrs@msn.com</p>
+            </div>
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
                 </div>
-                <div class="col-sm-6 form-group">
-                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Enviar</button>
+                    </div>
                 </div>
             </div>
-            <textarea class="form-control" id="comments" name="comments" placeholder="Comentário" rows="5"></textarea><br>
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <button class="btn btn-default pull-right" type="submit">Enviar</button>
-                </div>
-            </div>
         </div>
-    </div>
-</div>
+    </div>*@
 

@@ -1,20 +1,22 @@
 ﻿// Google Maps
 
-function myMap() {
-    var myCenter = new google.maps.LatLng(-22.986742, -43.320850);
-    var mapTypeId = new google.maps.MapTypeId.HYBRID;
-    var mapCanvas = document.getElementById("map");
-    var mapOptions = { center: myCenter, zoom: 15, type: mapTypeId };
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    var marker = new google.maps.Marker({ position: myCenter });
+//function myMap() {
+//    var myCenter = new google.maps.LatLng(-22.986742, -43.320850);
+//    var mapTypeId = new google.maps.MapTypeId.HYBRID;
+//    var mapCanvas = document.getElementById("map");
+//    var mapOptions = { center: myCenter, zoom: 15, type: mapTypeId };
+//    var map = new google.maps.Map(mapCanvas, mapOptions);
+//    var marker = new google.maps.Marker({ position: myCenter });
 
-    marker.setMap(map);
-    // Zoom to 9 when clicking on marker
-    google.maps.event.addListener(marker, 'click', function () {
-        map.setZoom(20);
-        map.setCenter(marker.getPosition());
-    });
-}
+//    marker.setMap(map);
+//    // Zoom to 9 when clicking on marker
+//    google.maps.event.addListener(marker, 'click', function () {
+//        map.setZoom(20);
+//        map.setCenter(marker.getPosition());
+//    });
+//}
+
+// End Google Maps
 
 // Clock canvas
 
@@ -37,7 +39,7 @@ function myMap() {
 //    ctx.beginPath();
 //    ctx.arc(0, 0, radius, 0, 2 * Math.PI);
 //    ctx.fillStyle = 'white';
- 
+
 //    ctx.fill();
 //    grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
 //    grad.addColorStop(0, '#333');
@@ -129,9 +131,11 @@ $(document).ready(function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+                
             });
-        } // End if
-    });
+        }
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
+     });
 
     $(window).scroll(function () {
         $(".slideanim").each(function () {
@@ -146,3 +150,28 @@ $(document).ready(function () {
 })
 
 // End da Página Principal
+
+// Mudar o background do Body
+
+//my_element_jq = $("video");
+//comment = document.createComment(my_element_jq.get(0).outerHTML);
+$(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+            //my_element_jq = $("video");
+            //my_element_jq.replaceWith(comment);
+            $("body").addClass("changeColor")
+            $("video").addClass("video2")
+        }
+        if ($(this).scrollTop() < 50) {
+            //$(comment).replaceWith(comment.nodeValue);
+            $("body").removeClass("changeColor")
+            $("video").addClass("video")
+            $("video").removeClass("video2")
+        }
+    });
+});
+
+ // End Mudar background do body
+
+

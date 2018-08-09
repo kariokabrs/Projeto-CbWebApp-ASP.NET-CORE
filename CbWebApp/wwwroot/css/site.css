@@ -1,4 +1,12 @@
-﻿video {
+﻿body {
+    margin-top: 80px;
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+    transition: 0.5s all;
+
+}
+.video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -10,9 +18,32 @@
     transform: translateX(-50%) translateY(-50%);
     /*background: url('/images/Air-shuttle.jpg') no-repeat;*/
     background-size: cover;
-    transition: 1s opacity;
+    transition: 1s all;
+    opacity: 0;
+    -webkit-animation-name: video;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: video;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-delay: 0s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: video;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes video {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 /*.navbar-brand {
     background: url('/images/core.png') no-repeat;
     background-size: 20px 20px;
@@ -21,12 +52,7 @@
     width: 20px;
 }*/
 
-body {
-    margin-top: 80px;
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-}
+
 
 h2 {
     font-size: 24px;
@@ -125,7 +151,7 @@ h4 {
     opacity: 0;
     -webkit-animation-name: texto;
     -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+    -webkit-animation-delay: 4s;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-name: texto;
     -moz-animation-duration: 2s;
@@ -221,29 +247,34 @@ h4 {
     animation-direction: alternate;
 }
 
-@keyframes logo {
-    0% {
-        color: black;
-    }
-
-    25% {
-        color: black;
-    }
-
-    50% {
-        color: black;
-    }
-
-    75% {
-        color: darkgreen;
-    }
-
-    100% {
-        color: black;
-    }
+.logo4 {
+    color: black;
+    font-size: 200px;
 }
 
-.thumbnail {
+    @keyframes logo {
+        0% {
+            color: black;
+        }
+
+        25% {
+            color: black;
+        }
+
+        50% {
+            color: black;
+        }
+
+        75% {
+            color: darkgreen;
+        }
+
+        100% {
+            color: black;
+        }
+    }
+
+    .thumbnail {
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
@@ -574,14 +605,14 @@ span {
 
 @keyframes logo {
     0%, 100% {
-        left: 0px;
-        top: 0px;
+        left: 0;
+        top: 0;
         transform: rotate(0deg)
     }
 
     25% {
         left: 50px;
-        top: 0px;
+        top: 0;
         transform: rotate(180deg)
     }
 
@@ -592,16 +623,29 @@ span {
     }
 
     75% {
-        left: 0px;
+        left: 0;
         top: 50px;
         transform: rotate(-180deg)
     }
 }
 
 .ms-logo {
+    opacity: 0;
     overflow: hidden;
     width: 112px;
     margin: 0 auto;
+    -webkit-animation-name: texto;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: texto;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 6s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
 }
 
 .box {
@@ -611,20 +655,113 @@ span {
 }
 
 .red {
-    background-color: #f02400;
+    background-color: white;
+    -webkit-animation-name: red;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 8s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: red;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 8s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: red;
+    animation-duration: 2s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes red {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #f02400;
+    }
 }
 
 .green {
-    background-color: #76bf00;
+    background-color: white;
+    -webkit-animation-name: green;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: green;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 10s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: green;
+    animation-duration: 2s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes green {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #76bf00;
+    }
 }
 
 .blue {
-    background-color: #1e9dfc;
+    background-color: white;
+    -webkit-animation-name: blue;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 12s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: blue;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 12s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: blue;
+    animation-duration: 2s;
+    animation-delay: 12s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes blue {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #1e9dfc;
+    }
 }
 
 .yellow {
-    background-color: #feb801;
+    background-color: white;
+    -webkit-animation-name: yellow;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 14s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: yellow;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 14s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: yellow;
+    animation-duration: 2s;
+    animation-delay: 14s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
 }
+
+@keyframes yellow {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: #feb801;
+    }
+}
+
 
 .left {
     float: left;
@@ -633,4 +770,34 @@ span {
 .right {
     float: right;
     clear: right;
+}
+
+.changeColor {
+    background: white;
+}
+
+.video2 {
+    -webkit-animation-name: video2;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: video2;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-delay: 0s;
+    -moz-animation-fill-mode: forwards;
+    animation-name: video2;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes video2 {
+
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
