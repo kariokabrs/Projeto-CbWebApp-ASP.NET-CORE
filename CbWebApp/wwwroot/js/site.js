@@ -131,11 +131,11 @@ $(document).ready(function () {
 
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
-                
+
             });
         }
         $('html, body').animate({ scrollTop: 0 }, 'fast');
-     });
+    });
 
     $(window).scroll(function () {
         $(".slideanim").each(function () {
@@ -147,7 +147,7 @@ $(document).ready(function () {
             }
         });
     });
-})
+});
 
 // End da Página Principal
 
@@ -160,14 +160,14 @@ $(function () {
         if ($(this).scrollTop() > 50) {
             //my_element_jq = $("video");
             //my_element_jq.replaceWith(comment);
-            $("body").addClass("changeColor")
-            $("video").addClass("video2")
+            $("body").addClass("changeColor");
+            $("video").addClass("video2");
         }
         if ($(this).scrollTop() < 50) {
             //$(comment).replaceWith(comment.nodeValue);
-            $("body").removeClass("changeColor")
-            $("video").addClass("video")
-            $("video").removeClass("video2")
+            $("body").removeClass("changeColor");
+            $("video").addClass("video");
+            $("video").removeClass("video2");
         }
     });
 });

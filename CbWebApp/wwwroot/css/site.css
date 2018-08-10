@@ -4,8 +4,8 @@
     line-height: 1.8;
     color: #818181;
     transition: 0.5s all;
-
 }
+
 .video {
     position: fixed;
     top: 50%;
@@ -51,8 +51,6 @@
     margin: 5px;
     width: 20px;
 }*/
-
-
 
 h2 {
     font-size: 24px;
@@ -210,6 +208,10 @@ h4 {
 .logo1 {
     color: black;
     font-size: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     -webkit-animation-name: logo;
     -webkit-animation-duration: 20s;
     -webkit-animation-delay: 0s;
@@ -252,29 +254,29 @@ h4 {
     font-size: 200px;
 }
 
-    @keyframes logo {
-        0% {
-            color: black;
-        }
-
-        25% {
-            color: black;
-        }
-
-        50% {
-            color: black;
-        }
-
-        75% {
-            color: darkgreen;
-        }
-
-        100% {
-            color: black;
-        }
+@keyframes logo {
+    0% {
+        color: black;
     }
 
-    .thumbnail {
+    25% {
+        color: black;
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: darkgreen;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+.thumbnail {
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
