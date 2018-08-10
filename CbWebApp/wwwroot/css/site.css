@@ -550,13 +550,8 @@ footer .glyphicon {
 }
 
 .felix {
-    margin-bottom: 56px;
-    margin-left: 43%;
+    margin: auto;
     /*/margin-right: 50%;*/
-    max-width: 40px;
-    max-height: 32px;
-    width: 50%;
-    height: 50%;
     /*-webkit-animation-name: felixcat;
     -webkit-animation-duration: 25s;
     -webkit-animation-delay: 0s;
@@ -569,13 +564,13 @@ footer .glyphicon {
     animation-direction: alternate;*/
 }
 
-    .felix:hover {
+/*.felix:hover {
         -webkit-animation-play-state: paused;
         -moz-animation-play-state: paused;
         animation-play-state: paused;
-    }
+    }*/
 
-@keyframes felixcat {
+/*@keyframes felixcat {
     0% {
         margin-left: 50%;
         -webkit-transform: rotateY(0deg);
@@ -589,7 +584,7 @@ footer .glyphicon {
         -moz-transform: rotateY(360deg);
         transform: rotateY(360deg);
     }
-}
+}*/
 
 i {
     opacity: 0.9;
@@ -810,4 +805,13 @@ span {
     100% {
         opacity: 0;
     }
+}
+
+hr {
+    /*-moz-box-sizing: border-box;
+    border: 2px inset;*/
+    color: black;
+    /*display: block;*/
+    /*height: 50px;*/
+
 }
