@@ -162,12 +162,16 @@ $(function () {
             //my_element_jq.replaceWith(comment);
             $("body").addClass("changeColor");
             $("video").addClass("video2");
+            $("#up").removeClass("logo4");
+            $("#up").addClass("logo5");
         }
         if ($(this).scrollTop() < 50) {
             //$(comment).replaceWith(comment.nodeValue);
             $("body").removeClass("changeColor");
             $("video").addClass("video");
             $("video").removeClass("video2");
+            $("#up").removeClass("logo5");
+            $("#up").addClass("logo4");
         }
     });
 });

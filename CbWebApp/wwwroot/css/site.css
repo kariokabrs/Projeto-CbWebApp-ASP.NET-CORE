@@ -252,6 +252,14 @@ h4 {
 .logo4 {
     color: black;
     font-size: 200px;
+    display: none;
+    position: absolute;
+    left: -9999px;
+}
+
+.logo5 {
+    color: black;
+    font-size: 200px;
 }
 
 @keyframes logo {
