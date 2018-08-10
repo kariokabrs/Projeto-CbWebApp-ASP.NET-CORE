@@ -52,6 +52,10 @@
     width: 20px;
 }*/
 
+h1 {
+    font-size: 5vmin;
+}
+
 h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -66,6 +70,10 @@ h4 {
     color: #303030;
     font-weight: 400;
     margin-bottom: 20px;
+}
+
+h8 {
+    font-size: 24px;
 }
 
 .jumbotron {
@@ -172,7 +180,7 @@ h4 {
 }
 
 .container-fluid {
-    padding: 60px 50px;
+    padding: 60px 0;
 }
 
 .bg-grey {
@@ -212,41 +220,11 @@ h4 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    -webkit-animation-name: logo;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-name: logo;
-    -moz-animation-duration: 20s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-    animation-name: logo;
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .logo2 {
     color: black;
     font-size: 100px;
-    -webkit-animation-name: logo;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -moz-animation-name: logo;
-    -moz-animation-duration: 20s;
-    -moz-animation-delay: 0s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-    animation-name: logo;
-    animation-duration: 20s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .logo4 {
@@ -550,41 +528,10 @@ footer .glyphicon {
 }
 
 .felix {
-    margin: auto;
-    /*/margin-right: 50%;*/
-    /*-webkit-animation-name: felixcat;
-    -webkit-animation-duration: 25s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    animation-name: felixcat;
-    animation-duration: 25s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;*/
+    margin-bottom: 56px;
+    max-height: 32px;
 }
 
-/*.felix:hover {
-        -webkit-animation-play-state: paused;
-        -moz-animation-play-state: paused;
-        animation-play-state: paused;
-    }*/
-
-/*@keyframes felixcat {
-    0% {
-        margin-left: 50%;
-        -webkit-transform: rotateY(0deg);
-        -moz-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-    }
-
-    100% {
-        margin-left: 50%;
-        -webkit-transform: rotateY(360deg);
-        -moz-transform: rotateY(360deg);
-        transform: rotateY(360deg);
-    }
-}*/
 
 i {
     opacity: 0.9;
@@ -600,11 +547,12 @@ span {
 }
 
 .row1 {
-    margin: 100px auto;
+    margin-top: 110px;
     opacity: 0.9;
 }
 
 .row2 {
+    margin-top: 50px;
     opacity: 0.9;
 }
 
@@ -805,13 +753,4 @@ span {
     100% {
         opacity: 0;
     }
-}
-
-hr {
-    /*-moz-box-sizing: border-box;
-    border: 2px inset;*/
-    color: black;
-    /*display: block;*/
-    /*height: 50px;*/
-
 }
